@@ -240,114 +240,42 @@ main {
 }
 
 .projects{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    background-color:#f5efe6;
-}
-.projects article:nth-child(1) {
-    width: 100%; /* Full viewport width */
-    min-height: calc(100vh - 4.5rem); /* Minimum height = viewport height minus header */
-    background-image: url("../images/personal-project.jpg"); /* Background image path */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    background-size: cover; /* Scale image to cover entire container */
-    background-position: center; /* Center the image */
-    position: relative; /* Allows absolute positioning of overlay */
-    display: flex; /* Use flexbox for content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Horizontally center content */
-    justify-content: center; /* Vertically center content */
-    gap: 1.5rem; /* 24px space between heading and paragraph */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
 }
 
-/* Dark overlay on hero background */
+.projects div{
+    height: 200px;
+    background-size: cover;
+}
+
+.content-1{
+    grid-column: 1 / 2;
+  grid-row: 1 / 2;
+background-image: url(../images/personal-project.jpg);
+height:100px;
+
+}
 .overlay {
-    position: absolute; /* Position over the hero section */
-    left: 0; /* Align to left edge */
-    top: 0; /* Align to top edge */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(1, 10, 70, 0.5); /* Dark blue with 50% transparency */
-}
-.projects article:nth-child(1) {
-    width: 100%; /* Full viewport width */
-    min-height: calc(100vh - 4.5rem); /* Minimum height = viewport height minus header */
-    background-image: url("../images/personal-project.jpg"); /* Background image path */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    background-size: cover; /* Scale image to cover entire container */
-    background-position: center; /* Center the image */
-    position: relative; /* Allows absolute positioning of overlay */
-    display: flex; /* Use flexbox for content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Horizontally center content */
-    justify-content: center; /* Vertically center content */
-    gap: 1.5rem; /* 24px space between heading and paragraph */
-}
-
-/* Dark overlay on hero background */
-.overlay {
-    position: absolute; /* Position over the hero section */
-    left: 0; /* Align to left edge */
-    top: 0; /* Align to top edge */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(1, 10, 70, 0.5); /* Dark blue with 50% transparency */
-}
-.projects article:nth-child(1) {
-    width: 100%; /* Full viewport width */
-    min-height: calc(100vh - 4.5rem); /* Minimum height = viewport height minus header */
-    background-image: url("../images/personal-project.jpg"); /* Background image path */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    background-size: cover; /* Scale image to cover entire container */
-    background-position: center; /* Center the image */
-    position: relative; /* Allows absolute positioning of overlay */
-    display: flex; /* Use flexbox for content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Horizontally center content */
-    justify-content: center; /* Vertically center content */
-    gap: 1.5rem; /* 24px space between heading and paragraph */
-}
-
-/* Dark overlay on hero background */
-.overlay {
-    position: absolute; /* Position over the hero section */
-    left: 0; /* Align to left edge */
-    top: 0; /* Align to top edge */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(1, 10, 70, 0.5); /* Dark blue with 50% transparency */
-}
-.projects article:nth-child(2) {
-    width: 100%; /* Full viewport width */
-    min-height: calc(100vh - 4.5rem); /* Minimum height = viewport height minus header */
-    background-image: url("../images/personal-project.jpg"); /* Background image path */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    background-size: contain; /* Scale image to cover entire container */
-    background-position:center; /* Center the image */
-    position: relative; /* Allows absolute positioning of overlay */
-    display: flex; /* Use flexbox for content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Horizontally center content */
-    justify-content: center; /* Vertically center content */
-    gap: 1.5rem; /* 24px space between heading and paragraph */
-}
-
-/* Dark overlay on hero background */
-.overlay {
-    position: absolute; /* Position over the hero section */
-    left: 0; /* Align to left edge */
-    top: 0; /* Align to top edge */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(1, 10, 70, 0.5); /* Dark blue with 50% transparency */
-}
+    position: absolute; 
+  
+    background-color: rgba(1, 10, 70, 0.5)}
 
 
-
-.projects img:hover{
-    scale: 1.10;
-    filter: grayscale(0.5);
+.content-2{
+background-image: url(../images/personal-project.jpg);
+height:100px;
 }
+.content-3{
+background-image: url(../images/personal-project.jpg);
+height:100px;
+}
+.content-4{
+background-image: url(../images/personal-project.jpg);
+height:100px;
+}
+
 
 .projects a{
     background-color:#7B1C2E;
@@ -368,7 +296,7 @@ main {
 /*---------CONTACT section-------------*/
 
 #Contact h1{
-    margin-top: 1rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,10 +460,6 @@ footer {
     grid-template-rows: auto;
     }
 
-    .projects img{
-    width: 100%;
-    height: auto;
-    }
 
     .contact-wrapper{
         display: grid;
